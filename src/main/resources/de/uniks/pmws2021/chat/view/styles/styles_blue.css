@@ -1,0 +1,24 @@
+.button{
+    -fx-text-fill: white;
+    -fx-background-color: #2E64FE;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+.button:hover{
+    -fx-text-fill: black;
+    -fx-background-color: #A9D0F5;
+    -fx-border-color: grey;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+.button:pressed{
+    -fx-text-fill: black;
+    -fx-background-color: #81BEF7;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="11.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView id="listview_userList" prefHeight="367.0" prefWidth="400.0" />
+      <VBox alignment="CENTER" prefHeight="360.0" prefWidth="224.0" spacing="60.0">
+         <children>
+            <Button id="button_dcAll" mnemonicParsing="false" prefHeight="45.0" prefWidth="164.0" stylesheets="@styles/styles_blue.css" text="Disconnect All" />
+            <Button id="button_dcOne" mnemonicParsing="false" prefHeight="45.0" prefWidth="146.0" stylesheets="@styles/styles_blue.css" text="Disconnect One" />
+            <Button id="button_closeServer" mnemonicParsing="false" prefHeight="45.0" prefWidth="146.0" stylesheets="@styles/styles_blue.css" text="Close Server" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" top="20.0" />
+   </padding>
+</HBox>

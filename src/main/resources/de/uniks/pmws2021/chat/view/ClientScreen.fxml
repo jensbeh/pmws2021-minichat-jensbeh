@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" style="-fx-background-color: #EFEFFB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER_LEFT" prefHeight="400.0">
+         <children>
+            <HBox prefHeight="388.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EFEFFB;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="64.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: lightgrey; -fx-border-width: 0.5; -fx-border-radius: 15 0 0 0; -fx-background-radius: 15 0 0 0; -fx-background-insets: 0;">
+                           <children>
+                              <Label id="label_current_user" alignment="CENTER" contentDisplay="CENTER" text="Logged in as: currentUser" />
+                           </children>
+                        </HBox>
+                        <ListView id="listview_open_user_chats" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: lightgrey; -fx-border-width: 0.5; -fx-border-radius: 0 0 15 15; -fx-background-radius: 0 0 15 15; -fx-background-insets: 0;">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ListView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #EFEFFB;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="400.0" style="-fx-background-color: white; -fx-border-color: lightgrey; -fx-border-width: 0.5; -fx-border-radius: 0 15 0 0; -fx-background-radius: 0 15 0 0; -fx-background-insets: 0;">
+                           <children>
+                              <Label id="label_other_user" text="otherUser" />
+                           </children>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </HBox>
+                        <ListView id="listview_chat" prefHeight="312.0" prefWidth="400.0" style="-fx-border-color: lightgrey; -fx-background-color: white; -fx-border-width: 0.5; -fx-border-radius: 0 0 15 0; -fx-background-radius: 0 0 15 0; -fx-background-insets: 0;" />
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="10.0">
+                           <children>
+                              <TextField id="tf_message" prefHeight="29.0" prefWidth="368.0" promptText="Input message ..." style="-fx-border-color: transparent transparent grey transparent; -fx-background-color: #EFEFFB;">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button id="button_send" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="133.0" stylesheets="@styles/styles_blue.css" text="Send" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="35.0">
+         <children>
+            <Button id="button_delete" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" stylesheets="@styles/styles_blue.css" text="Delete Selected&#10;Message" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button id="button_clear" mnemonicParsing="false" prefHeight="33.0" prefWidth="78.0" stylesheets="@styles/styles_blue.css" text="Clear Chat">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets bottom="57.0" left="2.0" right="10.0" top="48.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <Button id="button_leave" mnemonicParsing="false" prefHeight="39.0" prefWidth="63.0" stylesheets="@styles/styles_blue.css" text="Leave">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="Online:" />
+            <ListView id="listview_online_users" prefHeight="250.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: lightgrey; -fx-border-width: 0.5; -fx-border-radius: 15 15 15 15; -fx-background-radius: 15 15 15 15; -fx-background-insets: 0;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></ListView>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="165.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="44.0" prefWidth="375.0" text="PMWS2021 - MiniChat">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="201.0" prefWidth="600.0" spacing="100.0">
+         <children>
+            <Button id="button_server" mnemonicParsing="false" prefHeight="64.0" prefWidth="171.0" stylesheets="@styles/styles_blue.css" text="Server">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button id="button_client" mnemonicParsing="false" prefHeight="64.0" prefWidth="178.0" stylesheets="@styles/styles_blue.css" text="Client">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
